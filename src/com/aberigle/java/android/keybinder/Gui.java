@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Main {
+public class Gui {
 
 	private Shell s = Shell.instance;
 	private JFrame frmDpadSimulator;
@@ -27,7 +27,7 @@ public class Main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main window = new Main();
+					Gui window = new Gui();
 					window.frmDpadSimulator.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,7 +39,7 @@ public class Main {
 	/**
 	 * Create the application.
 	 */
-	public Main() {
+	public Gui() {
 		initialize();
 	}
 
